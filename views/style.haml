@@ -2,6 +2,10 @@
 %link{href: '//fonts.googleapis.com/css?family=Open+Sans:300,600', rel: 'stylesheet'}
 -# internal
 :sass
+  // global variables
+  $foreground-color: #333
+  $base-font-size: 1rem
+  $base-spacing: $base-font-size
   // mixins and functions
   =media-md
     @media (min-width: 40rem)
@@ -23,7 +27,7 @@
   =font-weight-normal
     font-weight: 300
   =font-size($multiplier)
-    font-size: $multiplier * 1rem
+    font-size: $multiplier * $base-font-size
   @function column-width($columns)
     @return $columns / 12 * 100%
   // tags
@@ -40,7 +44,7 @@
     background-size: cover
     height: 100%
   body
-    color: #333
+    color: $foreground-color
     height: 100%
     margin: 0
     overflow: auto
@@ -55,20 +59,21 @@
     +font-weight-bold
     margin: 0
   svg
-    fill: #333
+    fill: $foreground-color
     margin-left: 0.0625rem
   // classes
   .row
     +font-size(0)
   .row:not(:last-child)
-    margin-bottom: 1rem
+    margin-bottom: $base-spacing
+  $social-dimension-length: 1.875rem
   .social
-    margin-right: 1.875rem
+    margin-right: $social-dimension-length
   .social svg
-    height: 1.875rem
+    height: $social-dimension-length
     margin: 0.25rem 0
     vertical-align: middle
-    width: 1.875rem
+    width: $social-dimension-length
   // ids
   #wrapper
     height: 100%
@@ -83,7 +88,7 @@
     +display-flex
     +flex-wrap(wrap)
     min-height: 100%
-    padding: 1rem
+    padding: $base-spacing
   #blu
     height: 2rem
     width: 2.875rem
