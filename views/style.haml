@@ -1,0 +1,97 @@
+-# external
+%link{:href => '//fonts.googleapis.com/css?family=Open+Sans:300,600', :rel => 'stylesheet'}
+-# internal
+:sass
+  // mixins and functions
+  =media-md
+    @media (min-width: 40rem)
+      @content
+  =media-lg
+    @media (min-width: 60rem)
+      @content
+  =align-items($align)
+    -webkit-align-items: $align
+    align-items: $align
+  =display-flex
+    display: -webkit-flex
+    display: flex
+  =flex-wrap($wrap)
+    -webkit-flex-wrap: $wrap
+    flex-wrap: $wrap
+  =font-weight-bold
+    font-weight: 600
+  =font-weight-normal
+    font-weight: 300
+  =font-size($multiplier)
+    font-size: $multiplier * 1rem
+  @function column-width($columns)
+    @return $columns / 12 * 100%
+  // tags
+  *
+    box-sizing: border-box
+    font-family: 'Open Sans', Helvetica, sans-serif
+    +font-weight-normal
+    +font-size(1)
+    line-height: 1.6
+  html
+    background-image: url(#{ media_url('woe-bear.jpg') })
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100%
+  body
+    color: #333
+    height: 100%
+    margin: 0
+    overflow: auto
+    text-transform: lowercase
+  a
+    color: inherit
+    display: inline-block
+    +font-weight-bold
+    text-decoration: none
+  h1
+    +font-size(2)
+    +font-weight-bold
+    margin: 0
+  svg
+    margin-left: 0.0625rem
+  // classes
+  .row
+    +font-size(0)
+  .row:not(:last-child)
+    margin-bottom: 1rem
+  .social
+    margin-right: 1.875rem
+  .social svg
+    height: 1.875rem
+    margin: 0.25rem 0
+    vertical-align: middle
+    width: 1.875rem
+  // ids
+  #wrapper
+    height: 100%
+    overflow: auto
+  #content
+    +media-md
+      margin-left: column-width(2)
+      width: column-width(6)
+    +media-lg
+      width: column-width(5)
+    +align-items(center)
+    +display-flex
+    +flex-wrap(wrap)
+    min-height: 100%
+    padding: 1rem
+  #blu
+    height: 2rem
+    width: 2.875rem
+  #hullabalu
+    height: 1.125rem
+    width: 5.2875rem
+  #columbia
+    height: 0.6875rem
+    width: 10.5875rem
+  #batch
+    height: 0.875rem
+    width: 2.9375rem
