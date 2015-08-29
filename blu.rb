@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'bundler/setup'
+
 require 'sinatra'
 require 'tilt/haml'
 require 'tilt/sass'
