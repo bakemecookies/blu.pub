@@ -2,12 +2,12 @@
 %html
   %head
     %title Brian Lu
-    %meta{:charset => 'utf-8'}
-    %meta{:content => 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no', :name => 'viewport'}
-    %link{:href => media_url('favicon.png'), :rel => 'shortcut icon'}
-    %link{:href => media_url('apple-touch-icon.png'), :rel => 'apple-touch-icon'}
+    %meta{charset: 'utf-8'}
+    %meta{content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no', name: 'viewport'}
+    %link{href: media_url('favicon.png'), rel: 'shortcut icon'}
+    %link{href: media_url('apple-touch-icon.png'), rel: 'apple-touch-icon'}
     = haml :style
-  %body{:lang => 'en'}
+  %body{lang: 'en'}
     #wrapper
       #content
         #text
@@ -17,26 +17,26 @@
           .row
             %span
               I'm a software developer in New York, currently working as Lead Engineer at
-            %a{:href => 'https://hullabalu.com'}
+            %a{href: 'https://hullabalu.com'}
               = haml :hullabalu
             %span .
           .row
             %span
               I studied Computer Science at
-            %a{:href => 'http://www.columbia.edu'}
+            %a{href: 'http://www.columbia.edu'}
               = haml :columbia
             %span .
           .row
             %span
               I make a series of progressive house/trance mixes called
-            %a{:href => 'http://blu.pub/batch'}
+            %a{href: 'http://blu.pub/batch'}
               = haml :batch
             %span .
           .row
-            %a.social{:href => 'https://www.facebook.com/juni0r'}
+            %a.social{href: 'https://www.facebook.com/juni0r'}
               = haml :facebook
-            %a.social{:href => 'http://instagram.com/bakemecookies'}
+            %a.social{href: 'http://instagram.com/bakemecookies'}
               = haml :instagram
-            %a.social{:href => 'https://twitter.com/bakemecookies'}
+            %a.social{href: 'https://twitter.com/bakemecookies'}
               = haml :twitter
     = haml :script
