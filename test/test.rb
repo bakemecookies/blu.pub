@@ -1,11 +1,12 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'rack/test'
-require 'test/unit'
 require 'coveralls'
 
 Coveralls.wear!
+
+require 'rack/test'
+require 'test/unit'
 
 require_relative '../blu'
 
