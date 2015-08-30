@@ -3,6 +3,9 @@ require 'bundler/setup'
 
 require 'rack/test'
 require 'test/unit'
+require 'coveralls'
+
+Coveralls.wear!
 
 require_relative '../blu'
 

@@ -8,4 +8,5 @@ group :test do
   gem 'rake', require: false
   gem 'rack-test', require: 'rack/test'
   gem 'test-unit', require: 'test/unit'
+  gem 'coveralls'
 end
