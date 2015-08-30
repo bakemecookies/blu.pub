@@ -47,17 +47,17 @@
     margin-left: 0.0625rem
   // classes
   .row
+    &:not(:last-child)
+      margin-bottom: $base-spacing
     +font-size(0)
-  .row:not(:last-child)
-    margin-bottom: $base-spacing
-  $social-dimension-length: 1.875rem
   .social
-    margin-right: $social-dimension-length
-  .social svg
-    height: $social-dimension-length
-    margin: 0.25rem 0
-    vertical-align: middle
-    width: $social-dimension-length
+    $dimension-length: 1.875rem
+    margin-right: $dimension-length
+    svg
+      height: $dimension-length
+      margin: 0.25rem 0
+      vertical-align: middle
+      width: $dimension-length
   // specific tags
   html
     background-image: url(#{ media_url('woe-bear.jpg') })
