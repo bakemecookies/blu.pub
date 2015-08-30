@@ -17,5 +17,4 @@ class SiteTest < Test::Unit::TestCase
     get '/'
     assert last_response.ok?
   end
-
 end
