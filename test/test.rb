@@ -6,6 +6,7 @@ require 'test/unit'
 
 require_relative '../blu'
 
+# Test suite for blu.pub.
 class SiteTest < Test::Unit::TestCase
   include Rack::Test::Methods
 
