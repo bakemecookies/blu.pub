@@ -30,33 +30,18 @@
     font-size: $multiplier * $base-font-size
   @function column-width($columns)
     @return $columns / 12 * 100%
-  // tags
+  // general tags
   *
     box-sizing: border-box
     font-family: 'Open Sans', Helvetica, sans-serif
     +font-weight-normal
     +font-size(1)
     line-height: 1.6
-  html
-    background-image: url(#{ media_url('woe-bear.jpg') })
-    background-position: center
-    background-repeat: no-repeat
-    background-size: cover
-    height: 100%
-  body
-    color: $foreground-color
-    height: 100%
-    margin: 0
-    text-transform: lowercase
   a
     color: inherit
     display: inline-block
     +font-weight-bold
     text-decoration: none
-  h1
-    +font-size(2)
-    +font-weight-bold
-    margin: 0
   svg
     fill: $foreground-color
     margin-left: 0.0625rem
@@ -73,6 +58,22 @@
     margin: 0.25rem 0
     vertical-align: middle
     width: $social-dimension-length
+  // specific tags
+  html
+    background-image: url(#{ media_url('woe-bear.jpg') })
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100%
+  body
+    color: $foreground-color
+    height: 100%
+    margin: 0
+    text-transform: lowercase
+  h1
+    +font-size(2)
+    +font-weight-bold
+    margin: 0
   // ids
   #wrapper
     height: 100%
