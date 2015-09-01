@@ -15,23 +15,20 @@
             %h1
               = haml :blu
           .row
-            %span
-              I'm a software developer in New York, currently working as Lead Engineer at
-            %a{href: 'https://hullabalu.com'}
-              = haml :hullabalu
-            %span .
+            I'm a software developer in New York, currently working as Lead Engineer at
+            = succeed '.' do
+              %a{href: 'https://hullabalu.com'}
+                = haml :hullabalu
           .row
-            %span
-              I studied Computer Science at
-            %a{href: 'http://www.columbia.edu'}
-              = haml :columbia
-            %span .
+            I studied Computer Science at
+            = succeed '.' do
+              %a{href: 'http://www.columbia.edu'}
+                = haml :columbia
           .row
-            %span
-              I make a series of progressive house/trance mixes called
-            %a{href: 'http://blu.pub/batch'}
-              = haml :batch
-            %span .
+            I make a series of progressive house/trance mixes called
+            = succeed '.' do
+              %a{href: 'http://blu.pub/batch'}
+                = haml :batch
           .row
             %a.social{href: 'https://www.facebook.com/juni0r'}
               = haml :facebook

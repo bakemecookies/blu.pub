@@ -33,10 +33,6 @@
   // general tags
   *
     box-sizing: border-box
-    font-family: 'Open Sans', Helvetica, sans-serif
-    +font-weight-normal
-    +font-size(1)
-    line-height: 1.6
   a
     color: inherit
     display: inline-block
@@ -49,7 +45,6 @@
   .row
     &:not(:last-child)
       margin-bottom: $base-spacing
-    +font-size(0)
   .social
     $dimension-length: 1.875rem
     margin-right: $dimension-length
@@ -64,7 +59,11 @@
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+    font-family: 'Open Sans', Helvetica, sans-serif
+    +font-size(1)
+    +font-weight-normal
     height: 100%
+    line-height: 1.6
   body
     color: $foreground-color
     height: 100%
