@@ -16,17 +16,17 @@
           .row
             I'm a software developer in New York, currently working as Lead Engineer at
             = succeed '.' do
-              %a{href: 'https://hullabalu.com'}= haml :hullabalu
+              %a{href: 'https://hullabalu.com', target: '_blank'}= haml :hullabalu
           .row
             I studied Computer Science at
             = succeed '.' do
-              %a{href: 'http://www.columbia.edu'}= haml :columbia
+              %a{href: 'http://www.columbia.edu', target: '_blank'}= haml :columbia
           .row
             I make a series of progressive house/trance mixes called
             = succeed '.' do
-              %a{href: 'http://blu.pub/batch'}= haml :batch
+              %a{href: 'http://blu.pub/batch', target: '_blank'}= haml :batch
           .row
-            %a.social{href: 'https://www.facebook.com/juni0r'}= haml :facebook
-            %a.social{href: 'https://instagram.com/bakemecookies/'}= haml :instagram
-            %a.social{href: 'https://twitter.com/bakemecookies'}= haml :twitter
+            %a.social{href: 'https://www.facebook.com/juni0r', target: '_blank'}= haml :facebook
+            %a.social{href: 'https://instagram.com/bakemecookies/', target: '_blank'}= haml :instagram
+            %a.social{href: 'https://twitter.com/bakemecookies', target: '_blank'}= haml :twitter
     = haml :script
