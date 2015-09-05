@@ -6,27 +6,29 @@
     %meta{content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no', name: 'viewport'}
     %link{href: media_url('favicon.png'), rel: 'shortcut icon'}
     %link{href: media_url('apple-touch-icon.png'), rel: 'apple-touch-icon'}
-    = haml :style
+    = haml :'style/external'
+    = haml :'style/internal'
   %body{lang: 'en'}
     #wrapper
       #content
         #text
           .row
-            %h1= haml :blu
+            %h1= haml :'svg/blu'
           .row
             I'm a software developer in New York, currently working as Lead Engineer at
             = succeed '.' do
-              %a{href: 'https://hullabalu.com', target: '_blank'}= haml :hullabalu
+              %a{href: 'https://hullabalu.com', target: '_blank'}= haml :'svg/hullabalu'
           .row
             I studied Computer Science at
             = succeed '.' do
-              %a{href: 'http://www.columbia.edu', target: '_blank'}= haml :columbia
+              %a{href: 'http://www.columbia.edu', target: '_blank'}= haml :'svg/columbia'
           .row
             I make a series of progressive house/trance mixes called
             = succeed '.' do
-              %a{href: 'http://blu.pub/batch', target: '_blank'}= haml :batch
+              %a{href: 'http://blu.pub/batch', target: '_blank'}= haml :'svg/batch'
           .row
-            %a.social{href: 'https://www.facebook.com/juni0r', target: '_blank'}= haml :facebook
-            %a.social{href: 'https://instagram.com/bakemecookies/', target: '_blank'}= haml :instagram
-            %a.social{href: 'https://twitter.com/bakemecookies', target: '_blank'}= haml :twitter
-    = haml :script
+            %a.social{href: 'https://www.facebook.com/juni0r', target: '_blank'}= haml :'svg/facebook'
+            %a.social{href: 'https://instagram.com/bakemecookies/', target: '_blank'}= haml :'svg/instagram'
+            %a.social{href: 'https://twitter.com/bakemecookies', target: '_blank'}= haml :'svg/twitter'
+    = haml :'script/external'
+    = haml :'script/internal'
