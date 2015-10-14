@@ -9,4 +9,6 @@
 
 See [server-guide](https://github.com/bakemecookies/server-guide).
 
+---
+
 [![Creative Commons Attribution 4.0 International License](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg)](http://creativecommons.org/licenses/by/4.0/)
