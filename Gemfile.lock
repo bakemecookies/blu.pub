@@ -9,7 +9,7 @@ GEM
     haml (4.0.7)
       tilt
     json (2.0.2)
-    power_assert (0.3.0)
+    power_assert (0.3.1)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -44,4 +44,4 @@ DEPENDENCIES
   test-unit
 
 BUNDLED WITH
-   1.12.5
+   1.13.0
