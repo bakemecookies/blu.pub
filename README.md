@@ -1,7 +1,6 @@
 # [blu.pub](http://blu.pub/)
 
 [![Build Status](https://travis-ci.org/bakemecookies/blu.pub.svg?branch=master)](https://travis-ci.org/bakemecookies/blu.pub)
-[![Code Climate](https://codeclimate.com/github/bakemecookies/blu.pub/badges/gpa.svg)](https://codeclimate.com/github/bakemecookies/blu.pub)
 
 ## Deployment
 
