@@ -5,8 +5,5 @@ language: generic
 sudo: required
 dist: trusty
 osx_image: xcode8
-install:
-  - curl -sL swift.vapor.sh/ubuntu | bash
 script:
-  - swift build
-  - swift build -c release
+  - eval "$(curl -sL https://swift.vapor.sh/ci)"
