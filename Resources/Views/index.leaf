@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brian Lu</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link href="//media.blu.pub/favicon.png" rel="shortcut icon">
+    <link href="//media.blu.pub/apple-touch-icon.png" rel="apple-touch-icon">
+    #embed("Style/external")
+    #embed("Style/internal")
+  </head>
+  <body lang="en">
+    <div id="wrapper">
+      <div id="content">
+        <div id="text">
+          <div class="row">
+            <h1>
+              #embed("SVG/blu")
+            </h1>
+          </div>
+          <div class="row">
+            I'm a software developer in New York, currently in iOS at <a href="http://www.mlbam.com" target="_blank">#embed("SVG/mlbam")</a>.
+          </div>
+          <div class="row">
+            I studied Computer Science at <a href="http://www.columbia.edu" target="_blank">#embed("SVG/columbia")</a>.
+          </div>
+          <div class="row">
+            I make a series of progressive house/trance mixes called <a href="http://batch.ws" target="_blank">#embed("SVG/batch")</a>.
+          </div>
+          <div class="row">
+            <a class="social" href="https://www.facebook.com/bakemecookies" target="_blank">#embed("SVG/facebook")</a>
+            <a class="social" href="https://instagram.com/bakemecookies/" target="_blank">#embed("SVG/instagram")</a>
+            <a class="social" href="https://twitter.com/bakemecookies" target="_blank">#embed("SVG/twitter")</a>
+            <a class="social" href="https://github.com/bakemecookies" target="_blank">#embed("SVG/github")</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    #embed("Script/internal")
+  </body>
+</html>

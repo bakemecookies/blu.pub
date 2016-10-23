@@ -1,0 +1,95 @@
+#raw() {
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    a {
+      color: inherit;
+      display: inline-block;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    svg {
+      fill: #333;
+      margin-left: 1px;
+    }
+
+    .row:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    .social {
+      margin-right: 30px;
+    }
+    .social svg {
+      height: 30px;
+      margin: 4px 0;
+      vertical-align: middle;
+      width: 30px;
+    }
+
+    html {
+      background-image: url("//media.blu.pub/woe-bear.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: "Open Sans", Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      height: 100%;
+      line-height: 1.6;
+    }
+    body {
+      color: #333;
+      height: 100%;
+      margin: 0;
+      text-transform: lowercase;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    #wrapper {
+      height: 100%;
+      overflow: auto;
+    }
+    #content {
+      -webkit-align-items: center;
+      align-items: center;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      min-height: 100%;
+      padding: 16px;
+    }
+    @media (min-width: 640px) {
+      #content {
+        margin-left: 16.667%;
+        width: 50%;
+      }
+    }
+    @media (min-width: 960px) {
+      #content {
+        width: 41.667%;
+      }
+    }
+    #blu {
+      height: 32px;
+      width: 46px;
+    }
+    #mlbam {
+      height: 13px;
+      width: 53px;
+    }
+    #columbia {
+      height: 11px;
+      width: 169px;
+    }
+    #batch {
+      height: 14px;
+      width: 47px;
+    }
+  </style>
+}
