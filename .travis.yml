@@ -6,4 +6,4 @@ sudo: required
 dist: trusty
 osx_image: xcode8
 script:
-  - eval "$(curl -sL https://gist.githubusercontent.com/bakemecookies/87f4a44ee282206b4e32ace78847c180/raw/f5261dd24f534eb7b35050336c1964c68b4c2119/ci)"
+  - eval "$(curl -sL https://gist.githubusercontent.com/bakemecookies/a031003addffa3201205a029ff68d146/raw/a9d94ac6f6107bd20805f42e931a7b385b9873f6/ci)"
