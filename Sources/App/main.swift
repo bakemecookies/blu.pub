@@ -1,9 +1,13 @@
 import Vapor
+import LeafProvider
 
-let drop = Droplet()
+let config = try Config()
+try config.addProvider(LeafProvider.Provider.self)
 
-drop.get { request in
+let drop = try Droplet(config)
+
+drop.get { _ in
   return try drop.view.make("index")
 }
 
-drop.run()
+try drop.run()

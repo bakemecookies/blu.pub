@@ -1,9 +1,8 @@
 os:
   - linux
-  - osx
 language: generic
 sudo: required
 dist: trusty
-osx_image: xcode8
+osx_image: xcode9.1
 script:
-  - eval "$(curl -sL https://gist.githubusercontent.com/bakemecookies/a031003addffa3201205a029ff68d146/raw/a9d94ac6f6107bd20805f42e931a7b385b9873f6/ci)"
+  - eval "$(curl -sL https://gist.githubusercontent.com/bakemecookies/1742b179c1528f68104686a5f3e14d01/raw/7010ade427f3671de3c66663f0a296bdc6301105/ci)"
