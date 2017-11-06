@@ -30,6 +30,7 @@
           <div class="row">
             <a class="social" href="https://www.facebook.com/bakemecookies" target="_blank">#embed("SVG/facebook")</a>
             <a class="social" href="https://instagram.com/bakemecookies/" target="_blank">#embed("SVG/instagram")</a>
+            <a class="social" href="https://untappd.com/user/bakemecookies" target="_blank">#embed("SVG/untappd")</a>
             <a class="social" href="https://twitter.com/bakemecookies" target="_blank">#embed("SVG/twitter")</a>
             <a class="social" href="https://github.com/bakemecookies" target="_blank">#embed("SVG/github")</a>
           </div>
